@@ -2,7 +2,7 @@ package card
 
 import (
 	"bank/pkg/bank/types"
-	"fmt"
+//	"fmt"
 )
 
 func Total(cards []types.Card) types.Money {
@@ -36,8 +36,8 @@ func PaymentSources(cards []types.Card) []types.PaymentSource {
 				Balance: card.Balance,})
 				
 	}
-	for _, sour := range source {
-		fmt.Println(sour.Number)
-	}
+//	for _, sour := range source {
+//		fmt.Println(sour.Number)
+//	}
 	return source
  }
